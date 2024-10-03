@@ -1,5 +1,6 @@
 * {
     border: 2px solid red;
+    font-family: 'Roboto', 'sans-serif';
 }
 
 p {
@@ -18,6 +19,9 @@ body {
 ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
 }
 
 a {
@@ -36,13 +40,52 @@ a {
 .h-top {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0 13vh;
 }
 
 .h-bot {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: row;
+  justify-content: center;
+  gap: 20vh;
+}
+
+.h-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  padding: 5vh;
+  flex-grow: 1;
 }
 
 .h-image {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
 
+.h-bot-title, .h-bot-text, .h-bot-button {
+    display: flex;
+    margin: 0;
+}
+
+.h-bot-title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.h-bot-text {
+    font-size: 18px;
+    color: #E5E7Eb;
+}
+
+.h-bot-button {
+    max-width: 11vh;
+    justify-content: center;
+    background-color: #3882F6;
+    color: #F9FAF8;
 }
